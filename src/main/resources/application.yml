@@ -1,0 +1,34 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: Product-Service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/product_db
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+api:
+  title: Product Service API
+  description: Product Service API
+  version: 1.0
+  contact:
+    email: email@domain.com
+    name: Product Service
+    link: https://www.paysyslabs.com/
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    display-request-duration: true
