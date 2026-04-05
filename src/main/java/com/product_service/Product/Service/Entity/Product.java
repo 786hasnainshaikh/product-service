@@ -15,11 +15,11 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@Column(name="Name", nullable = false)
+	@Column(name="Name")
 	private String name;
-	@Column(name="Price", nullable = false)
+	@Column(name="Price")
 	private double price;
-	@Column(name = "product_description", nullable = false)
+	@Column(name = "product_description")
 	private String productDescription;
 	
 	public int getId() {

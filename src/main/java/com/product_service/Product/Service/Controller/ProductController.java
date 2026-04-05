@@ -29,6 +29,9 @@ public class ProductController {
 
 	    try {
 	        // Call service to create product
+	    	 System.out.println("DTO name = " + request.getName());
+	         System.out.println("DTO price = " + request.getPrice());
+	         System.out.println("DTO desc = " + request.getProductDescription());
 	        ApiResponse<ProductResponseDTO> response = service.createProduct(request);
 	        
 	     // Log response DTO
