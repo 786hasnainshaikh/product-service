@@ -23,7 +23,7 @@ public class ProductController {
 	@Autowired
 	ProductService service;
 
-	@PostMapping
+	@PostMapping(path = "/createProduct")
 	public ResponseEntity<ApiResponse<ProductResponseDTO>> createProduct(
 	        @RequestBody ProductRequestDTO request) {
 
